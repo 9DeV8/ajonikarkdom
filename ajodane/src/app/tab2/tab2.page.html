@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Powiedz nam co lubisz*</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="ion-padding">    
+      <ion-item>
+        <ion-label>Gatunek Muzyczny</ion-label>
+        <ion-select okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="rock">Rock</ion-select-option>
+          <ion-select-option value="Metal">Metal</ion-select-option>
+          <ion-select-option value="drum and bass">Drum and Bass</ion-select-option>
+          <ion-select-option value="dp">Disco Polo</ion-select-option>
+          <ion-select-option value="hh">Te hop-hopy czy coś</ion-select-option>
+          <ion-select-option value="inny">Inny</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-list>   
+        <ion-item>
+          <ion-label>Jedzenie</ion-label>
+          <ion-select multiple="true" cancelText="Anuluj" okText="Wybierz">
+            <ion-select-option value="frytki">Frytki</ion-select-option>
+            <ion-select-option value="pizza">Pizza</ion-select-option>
+            <ion-select-option value="mak">Wszystko z McDonald's</ion-select-option>
+            <ion-select-option value="hd">Hot Dog</ion-select-option>
+            <ion-select-option value="chleb">Chleb z masłem</ion-select-option>
+            <ion-select-option value="owoce">Owoce</ion-select-option>
+            <ion-select-option value="warzywa">Jestem wege</ion-select-option>
+            <ion-select-option value="chiny">Chińszczyzna</ion-select-option>
+            <ion-select-option value="indyjskie">Kuchnia indyjska</ion-select-option>
+          </ion-select>
+        </ion-item>   
+      </ion-list>
+      <ion-list>   
+        <ion-item>
+          <ion-label>Zwierzak</ion-label>
+          <ion-select multiple="true" cancelText="Anuluj" okText="Wybierz">
+            <ion-select-option value="pies">Pies</ion-select-option>
+            <ion-select-option value="kot">Kot</ion-select-option>
+            <ion-select-option value="swinka">Świnka</ion-select-option>
+            <ion-select-option value="szczur">Szczurek</ion-select-option>
+            <ion-select-option value="osiolek">Osiołek</ion-select-option>
+            <ion-select-option value="krowa">Krowa</ion-select-option>
+            <ion-select-option value="inny">Inny</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-item>
+        <ion-label>Wymarzony zawód</ion-label>
+        <ion-select value="informatyk" okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="astr">Astronauta</ion-select-option>
+          <ion-select-option value="informatyk">Informatyk 15k</ion-select-option>
+          <ion-select-option value="prawnik">Prawnik</ion-select-option>
+          <ion-select-option value="rolnik">Rolnik</ion-select-option>
+          <ion-select-option value="policjant">Policjant</ion-select-option>
+          <ion-select-option value="inny">Inny</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ulubiona forma wypoczynku</ion-label>
+        <ion-select okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="jzr">Nad jeziorem</ion-select-option>
+          <ion-select-option value="kanapa">Przed kanapą</ion-select-option>
+          <ion-select-option value="granica">Za granicą</ion-select-option>
+          <ion-select-option value="gory">W górach</ion-select-option>
+          <ion-select-option value="morze">Nad morzem</ion-select-option>
+          <ion-select-option value="miasto">W mieście</ion-select-option>
+          <ion-select-option value="inny">Inna</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Liczba od 1 do 10</ion-label>
+        <ion-select [interfaceOptions]="customValueOptions" interface="value" multiple="true" placeholder="Wybierz liczbę" okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="1">1</ion-select-option>
+          <ion-select-option value="2">2</ion-select-option>
+          <ion-select-option value="3">3</ion-select-option>
+          <ion-select-option value="4">4</ion-select-option>
+          <ion-select-option value="5">5</ion-select-option>
+          <ion-select-option value="6">6</ion-select-option>
+          <ion-select-option value="7">7</ion-select-option>
+          <ion-select-option value="8">8</ion-select-option>
+          <ion-select-option value="9">9</ion-select-option>
+          <ion-select-option value="10">10</ion-select-option>
+          <ion-select-option value="69">69 if you know what I mean</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nigdy NIE</ion-label>
+        <ion-select multiple="true" okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="kon">Nie jechałem konno</ion-select-option>
+          <ion-select-option value="alk">Nie piłem w miejscu publicznym</ion-select-option>
+          <ion-select-option value="prawo">Nie złamałem prawa</ion-select-option>
+          <ion-select-option value="zabij">Nikogo nie zabiłem</ion-select-option>
+          <ion-select-option value="podst">Nie skończyłem podstawówki</ion-select-option>
+          <ion-select-option value="inf">Nie będę informatykiem 15k :(</ion-select-option>
+          <ion-select-option value="inny">Inna</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ile chciałbyś zarabiać?</ion-label>
+        <ion-select [interfaceOptions]="customValueOptions" interface="value" multiple="true" placeholder="Wybierz wartość" okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="1">15k</ion-select-option>
+          <ion-select-option value="2">15k</ion-select-option>
+          <ion-select-option value="3">15k</ion-select-option>
+          <ion-select-option value="4">15k</ion-select-option>
+          <ion-select-option value="5">15k</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Najlepsze kawałki Backstreet Boys</ion-label>
+        <ion-select multiple="true" okText="Wybierz" cancelText="Anuluj">
+          <ion-select-option value="utw1">Everybody</ion-select-option>
+          <ion-select-option value="utw2">Incomplete</ion-select-option>
+          <ion-select-option value="utw3">Get Down (You're The One For Me)</ion-select-option>
+          <ion-select-option value="utw4">I Want It That Way</ion-select-option>
+          <ion-select-option value="utw5">As Long as You Love Me</ion-select-option>
+          <ion-select-option value="utw6">Quit Playing Games (With My Heart)</ion-select-option>
+          <ion-select-option value="utw7">Don't Go Breaking My Heart</ion-select-option>
+          <ion-select-option value="inny">Inna</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <p style="word-spacing: 3px; "></p>
+
+      <div class ="inner">
+      <ion-button expand="block" color="dark" (click)='zaanimowany()'> KLIKNIJ MNIE NA KOŃCU </ion-button>
+      <p [@animacja]='state'> <ion-text color="danger"><h1>GRATULACJE!!!</h1></ion-text> Właśnie sprzedałeś nam trochę informacji o sobie! :) </p>
+    </div>
+
+        <ion-button expand="block" routerLink="/" routerDirection="root"> Powrót do strony głównej </ion-button>
+
+    <ion-footer>*a na pewno nie wykorzystamy tego przeciwko Tobie ;)
+</ion-footer>

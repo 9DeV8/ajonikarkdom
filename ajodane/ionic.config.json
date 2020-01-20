@@ -1,0 +1,7 @@
+{
+  "name": "ajodiet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
